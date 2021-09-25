@@ -1,0 +1,6 @@
+print('Glo Academy')
+
+print('G', sep='', end='l')
+print('o', sep=' ', end=' A')
+print('cad', sep='', end='emy')
+      
