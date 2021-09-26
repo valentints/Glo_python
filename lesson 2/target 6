@@ -1,0 +1,7 @@
+print('Введите одно целое четырехзначное число.')
+num = int(input())
+first = num // 1000
+second = num // 100 % 10
+third = num // 10 % 10
+fourth = num % 10
+print(max(first, second, third, fourth))
