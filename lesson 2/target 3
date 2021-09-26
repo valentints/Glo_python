@@ -1,0 +1,7 @@
+print('Введите трехзначное число')
+a = int(input())
+first = a // 100
+second = a // 10 % 10
+last = a % 10
+print(first + second + last)
+print(first * second * last)
