@@ -1,0 +1,10 @@
+print('Введите первое число')
+a = int(print())
+print('Введите второе число')
+b = int(print())
+
+print(a * b)
+print(a / b)
+print(a // b)
+print(a % b)
+print(a ** b)
