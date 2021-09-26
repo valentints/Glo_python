@@ -1,0 +1,7 @@
+print('Введите одно целое число.')
+num = int(input())
+last_three = num % 1000
+last_three_firs = last_three // 100
+last_three_second = last_three // 10 % 10
+last_three_third = last_three % 10
+print(last_three_firs + last_three_second + last_three_third)
