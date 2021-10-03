@@ -1,0 +1,17 @@
+print('Введите первую статью')
+txt1 = input()
+print('Введите вторую статью')
+txt2 = input()
+print('Введите третью статью')
+txt3 = input()
+
+len_txt1 = int(len(txt1))
+len_txt2 = int(len(txt2))
+len_txt3 = int(len(txt3))
+
+if (len_txt1 > len_txt2) and (len_txt1 > len_txt3):
+   print(txt1)
+elif (len_txt2 > len_txt1) and (len_txt1 > len_txt3):
+   print(txt2)
+else:
+    print(txt3)
