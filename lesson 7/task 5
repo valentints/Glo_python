@@ -1,0 +1,5 @@
+print('Введите число')
+a = int(input())
+
+for i in range(11):
+    print(i * a)
