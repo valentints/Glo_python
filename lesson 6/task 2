@@ -1,0 +1,8 @@
+print('Введите текст')
+txt = input()
+word = 'Glo'
+
+if word in txt:
+    print('Есть в тексте')
+else:
+    print('нет в тексте')
