@@ -1,0 +1,8 @@
+print('Введите любое натуральное число')
+n = int(input())
+
+for i in range(n):
+    print(i)
+    numb = i
+    sq = numb * numb
+    print(f'Квадрат числа {numb} равен {sq}')
