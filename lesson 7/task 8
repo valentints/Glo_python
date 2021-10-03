@@ -1,0 +1,17 @@
+print('Введите число большее или равное 2')
+n = int(input())
+maximum = n
+minimum = n
+
+print(f'Введите {n} чисел')
+for i in range(n):
+    number = int(input())
+    if number > maximum:
+        maximum = number
+    else:
+        maximum = maximum
+    if number < minimum:
+        minimum = number
+    else:
+        minimum = minimum
+print(maximum, minimum)
