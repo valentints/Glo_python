@@ -1,0 +1,7 @@
+print('Введите вес дыни')
+wight = int(input())
+
+if wight % 2 == 0:
+    print('YES')
+else:
+    print('NO')
