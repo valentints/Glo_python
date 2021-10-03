@@ -1,0 +1,16 @@
+print('Введите шестизначное число')
+number = int(input())
+first_number = number // 100000
+seond_number = number % 100000 // 10000
+third_number = number % 10000 // 1000
+fouth_number = number % 1000 // 100
+fiveth_number = number % 100 // 10
+sixth_number = number % 10
+
+sum_first = first_number + seond_number + third_number
+sum_second = fouth_number + fiveth_number + sixth_number
+
+if sum_first == sum_second:
+    print('Счастливое число')
+else:
+    print('Не счастливое число')
