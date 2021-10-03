@@ -1,0 +1,8 @@
+print('Введите свою почту')
+email = input()
+sym = '@'
+
+if sym in email:
+    print('Корректный')
+else:
+    print('некорректный')
