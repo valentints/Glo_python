@@ -1,0 +1,14 @@
+print('Введите число большее или равное 2')
+n = int(input())
+flag = 0
+
+print(f'Введите {n} чисел')
+for i in range(n):
+    number = int(input())
+    if number % 2 != 0:
+        flag += 1
+
+if flag > 0:
+    print('YES')
+else:
+    print('NO')
