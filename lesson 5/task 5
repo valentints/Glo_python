@@ -1,0 +1,13 @@
+import math
+
+
+print('Введите колличество заданий')
+task_number = int(input())
+
+print('Сколько вы сможите сделать за день')
+task_can_do = int(input())
+
+day_for_complete = math.ceil(task_number / task_can_do)
+
+
+print(day_for_complete)
