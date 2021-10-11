@@ -1,0 +1,10 @@
+sym = input()
+
+res = sym.islower()
+
+print(res)
+
+if res != 0:
+    print(sym.upper())
+else:
+    print(sym.lower())
