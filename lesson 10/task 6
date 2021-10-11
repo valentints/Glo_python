@@ -1,0 +1,9 @@
+sting = input()
+
+numb = str()
+
+for i in sting:
+    if i.isdigit():
+        numb += i
+print(numb)
+        
