@@ -1,0 +1,4 @@
+string = input().split()
+
+a = len(string)
+print(a)
