@@ -1,0 +1,10 @@
+name = input()
+second_name = input()
+surname = input()
+
+name_little = name[0].capitalize()
+print(name_little)
+second_name_little = second_name[0].capitalize()
+print(second_name_little)
+
+print(f'{surname} {name_little}.{second_name_little}.')
