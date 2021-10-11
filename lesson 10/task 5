@@ -1,0 +1,15 @@
+a = input()
+b = input()
+
+code1 = ord(a)
+code2 = ord(b)
+
+print(code1, code2)
+
+if code1 <= code2:
+    for i in range(code1, code2):
+        print(chr(i))
+        
+elif code1 > code2:
+    for i in range(code2, code1):
+        print(chr(i)) 
