@@ -1,0 +1,14 @@
+n = int(input())
+
+positive = 0
+negative = 0
+
+while n != 0:
+    print('Введите число')
+    n = int(input())
+    if n > 0:
+        positive += 1
+    else:
+        negative += 1
+
+print(positive * negative)
