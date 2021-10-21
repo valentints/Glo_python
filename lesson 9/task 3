@@ -7,3 +7,15 @@ for i in a:
         break
     else:
         print('no')
+        
+        
+a = int(input())
+
+while a > 0:
+    if a % 10 == 1:
+        print('yes')
+        a //= 10
+        break
+    else:
+        print('no')
+        break        
