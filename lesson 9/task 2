@@ -1,0 +1,9 @@
+a = int(input())
+
+while a > 0:
+    if a % 2 == 1 or a == 2:
+        print('yes')
+        break
+    else:
+        print('no')
+        break
