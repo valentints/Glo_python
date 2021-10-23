@@ -1,1 +1,9 @@
 
+def hueta(x, y):
+    x = str(x)
+    y = str(y)
+    x_len = len(x)
+    y_len = len(y)
+    return x_len * y_len
+ 
+print(hueta(1111, 111))
