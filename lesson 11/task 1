@@ -1,1 +1,19 @@
+print('Введите число')
+n = int(input())
 
+list = []
+
+print('Введите слова')
+for i in range(n):
+    wrd = input()
+    wrd_low = wrd.lower()
+    list.append(wrd_low)
+
+print('ключевое слово')
+look = input()
+look_mod = look.lower()
+
+if look_mod in list:
+    print(look_mod)
+else:
+    print('Нет совпадений ')
