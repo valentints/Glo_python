@@ -1,0 +1,7 @@
+print('Введите строку адреса')
+n = input()
+
+list = n.split('\\')
+
+finish = '\n'.join(list)
+print(finish)
