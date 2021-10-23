@@ -1,0 +1,12 @@
+print('Введите строку адреса')
+n = input()
+
+n_mod = n.split('.')
+
+for i in n_mod:
+    i = int(i)
+    if i > 255 or i < 0:
+        print('Это не IP')
+        break
+    else:
+        print('Это IP')
