@@ -1,0 +1,9 @@
+n = int(input())
+
+def month(n):
+    monthes = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    i = n - 1
+    return monthes[n - 1]
+
+
+print(month(n))
