@@ -1,0 +1,9 @@
+list_one = [1, 2, 4, 5, 6]
+list_two = [7, 8, 9, 10, 11]
+
+
+def tof(x=[], y=[]):
+    return max(x) * max(y)
+    
+
+print(tof(list_one, list_two))
