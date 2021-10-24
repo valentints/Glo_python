@@ -1,0 +1,11 @@
+n = input().split('.')
+
+def star_day(n):
+    month_day_multip = int(n[0]) * int(n[1])
+    last_years_digit = int(n[2][2:])
+    if month_day_multip == last_years_digit:
+        print('YES')
+    else:
+        print('NO')
+
+star_day(n)
