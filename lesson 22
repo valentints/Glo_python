@@ -1,1 +1,11 @@
+strr = input()
 
+counter = 0
+
+for letter in strr:
+    print(letter)
+    if i == i + 1
+    ff = strr.count('letter' * 2)
+    counter += 1
+
+print(counter)
