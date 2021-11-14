@@ -1,22 +1,54 @@
-question = [
-    'Сколько будет два плюс два умноженное на два?',
-    'Бревно нужно распилисть на 10 частей, сколько надо сделать распилов?',
-    'На двух руках 10 пальцев. Сколько пальцев на 5 руках?',
-    'Укол делают кажжые полчаса, сколько минут для трёх уколов?',
-    'Пять свечей гороло, две потухли. Сколько свечей осталось?']
+import random
 
-answers = [6, 9, 25, 60, 2]
+def get_question():
+    question = [
+        'Сколько будет два плюс два умноженное на два?',
+        'Бревно нужно распилисть на 10 частей, сколько надо сделать распилов?',
+        'На двух руках 10 пальцев. Сколько пальцев на 5 руках?',
+        'Укол делают кажжые полчаса, сколько минут для трёх уколов?',
+        'Пять свечей гороло, две потухли. Сколько свечей осталось?']
+    return question
 
-count_right_answers = 0
+def get_answers():
+    answers = [6, 9, 25, 60, 2]
+    return answers
 
-for i in range(len(question)):
-    print(i + 1, end=' ')
-    print(question[i])
+def calculate_result(ount_right_answers):
+    results = ['Идиот', 'Кретин', 'Дурак', 'Нормальный', 'Талант', 'Гений']
+    return results[count_right_answers]
 
-    user_answer = int(input())
-    
-    right_answer = answers[i]
-    if user_answer == right_answer:
-        count_right_answers += 1
+while True:
+    print('Как вас зовут?')
+    user_name = input()
+    question = get_question()
+    answers = get_answers()
 
-print('Количество парвильных ответов =', count_right_answers)
+
+    count_right_answers = 0
+
+    for i in range(len(question)):
+        print(f'Вопрос номер {i + 1}', end='\n ')
+        
+        random_index = random.randint(0, len(question) - 1)
+        print(question[random_index])
+
+        user_answer=int(input())
+        who_are_you=''
+
+        right_answer = answers[random_index]
+        if user_answer == right_answer:
+            count_right_answers += 1
+
+        question.pop(random_index)
+        answers.pop(random_index)
+
+    results=calculate_result(count_right_answers)
+
+    print('Количество парвильных ответов =', count_right_answers, user_name, 'Вы ', results)
+    print('Хотите сыграть заново?')
+
+    user_answer=input()
+
+    if user_answer.upper() != 'ДА':
+        break
+        
