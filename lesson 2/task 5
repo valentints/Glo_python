@@ -1,0 +1,8 @@
+print('Введите число')
+n = int(input())
+
+hora = n // 3600
+minut = (n - (hora * 3600)) // 60
+second = (n - (hora * 3600) - (minut * 60))
+
+print(f'{hora} часов {minut} минут {second} секунд')
